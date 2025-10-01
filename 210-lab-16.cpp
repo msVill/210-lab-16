@@ -26,6 +26,8 @@ class Color {
         //Partial Construtor:
         Color(int r) {
             red = r;
+            green = 0;
+            blue = 0;
         }
 
         //Parameter Constructor:
