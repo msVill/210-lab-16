@@ -78,34 +78,40 @@ void print(Color c) {
 }
 
 int main() {
-    //Several color objects
-    Color skyBlue;
-    skyBlue.setRed(135);
-    skyBlue.setGreen(206);
-    skyBlue.setBlue(235);
 
-    Color lime;
-    lime.setRed(50);
-    lime.setGreen(205);
-    lime.setBlue(50);
+    //Default Constructor:
+    Color black;
 
-    Color violet;
-    violet.setRed(238);
-    violet.setGreen(130);
-    violet.setBlue(238);
+    //Partial Constructor:
+    Color darkRed(139);
+
+    //Full Constructor:
+    Color skyBlue(135, 206, 235);
+    Color lime(50, 205, 50);
+    Color violet(238, 130, 238);
 
     //Prints to console
-    cout << "Sky Blue:\n";
+    cout << "Black (default):\n" ;
+    black.print();
+    print(black);
+    cout << endl;
+
+    cout << "Dark Red (partial):\n";
+    darkRed.print();
+    print(darkRed);
+    cout << endl;
+
+    cout << "Sky Blue (full):\n";
     skyBlue.print();
     print(skyBlue);
     cout << endl;
 
-    cout << "Lime:\n";
+    cout << "Lime (full):\n";
     lime.print();
     print(lime);
     cout << endl;
 
-    cout << "Violet:\n";
+    cout << "Violet (full):\n";
     violet.print();
     print(violet );
     cout << endl;
