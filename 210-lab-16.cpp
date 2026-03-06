@@ -49,10 +49,9 @@ class Color {
 int main() {
 
     //create several Color class objects:
-    Color c1, c2, c3;
-    c1.setRed(255); c1.setGreen(0); c1.setBlue(0);
-    c2.setRed(0); c2.setGreen(255); c2.setBlue(0);
-    c3.setRed(0); c3.setGreen(0); c3.setBlue(255);
+    Color c1; // default constructor. has default vals. no need to pass args.
+    Color c2(255, 65); // partial constructor call. takes 2 args.
+    Color c3(45, 64, 164);
 
     //Output the data from the Color objects:
     c1.print();
